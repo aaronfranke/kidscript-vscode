@@ -1,0 +1,79 @@
+{
+	"MultiplicationKeyword": {
+		"prefix": "multiplicationkeyword",
+		"body": [
+			"×"
+		],
+		"description": "Multiplication Keyword"
+	},
+	"DivisionKeyword": {
+		"prefix": "divisionkeyword",
+		"body": [
+			"÷"
+		],
+		"description": "Division Keyword"
+	},
+	"ColumnLineSnippet": {
+		"prefix": "columnlinesnippet",
+		"body": [
+			"var y = 25",
+			"loop 5",
+			"  var item = new ${1:Class}(50, y)",
+			"  $2",
+			"  y = y + 10",
+			"end"
+		],
+		"description": "Creates a column of 5 objects.\n"
+	},
+	"RowLineSnippet": {
+		"prefix": "rowlinesnippet",
+		"body": [
+			"var x = 20",
+			"loop 5",
+			"  var item = new ${1:Class}(x, 50)",
+			"  $2",
+			"  x = x + 15",
+			"end"
+		],
+		"description": "Creates a row of 5 objects.\n"
+	},
+	"GridSnippet": {
+		"prefix": "gridsnippet",
+		"body": [
+			"var y = 25",
+			"loop 5",
+			"  var x = 20",
+			"  loop 5",
+			"    var item = new ${1:Class}(x, y)",
+			"    $2",
+			"    x = x + 15",
+			"  end",
+			"  y = y + 10",
+			"end"
+		],
+		"description": "Creates a 5x5 grid of objects.\n"
+	},
+	"IteratorLoopSnippet": {
+		"prefix": "iteratorsnippet",
+		"body": [
+			"var iterator = 0",
+			"loop $1",
+			"  $2",
+			"  iterator = iterator + 1",
+			"end"
+		],
+		"description": "Iterator Loop Snippet"
+	},
+	"TimerSnippet": {
+		"prefix": "timersnippet",
+		"body": [
+			"var $1 = new Timer()",
+			"$1.countTo(0)",
+			"when $1.ends()",
+			"  $2",
+			"  $1.countTo(1)",
+			"end"
+		],
+		"description": "Timer Snippet"
+	}
+}

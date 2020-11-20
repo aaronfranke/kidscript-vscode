@@ -6,13 +6,15 @@
 	"name": "KidScript",
 	"patterns": [
 		{ "include": "#base_expression" },
-		{ "include": "#logic_op" },
-		{ "include": "#compare_op" },
+		{ "include": "#keywords" },
 		{ "include": "#arithmetic_op" },
 		{ "include": "#assignment_op" },
-		{ "include": "#keywords" },
 		{ "include": "#builtin_classes" },
-		{ "include": "#any-method" }
+		{ "include": "#any-method" },
+		{
+			"match": "\\b(game|math|random)\\b",
+			"name": "support.variable.kidscript"
+		}
 	],
 	"repository": {
 		"comment": {
@@ -39,13 +41,9 @@
 				{ "include": "#numbers"}
 			]
 		},
-		"logic_op": {
-			"match": "\\b(and|or)\\b",
-			"name": "keyword.operator.logical.kidscript"
-		},
-		"compare_op": {
-			"match": "\\b(is not|is|greater than|less than)\\b",
-			"name": "keyword.operator.comparison.kidscript"
+		"keywords": {
+			"match": "\\b(import|when|var|if|then|for|loop|end|new|and|or|is not|is|greater than|less than)\\b",
+			"name": "keyword.language.kidscript"
 		},
 		"arithmetic_op": {
 			"match": "×|÷|\\+|-",
@@ -55,13 +53,9 @@
 			"match": "=",
 			"name": "keyword.operator.assignment.kidscript"
 		},
-		"keywords": {
-			"match": "\\b(import|when|var|if|then|for|loop|end|new|is not|is|greater than|less than)\\b",
-			"name": "keyword.language.kidscript"
-		},
 		"letter": {
-			  "match": "\\b(?i:true|false)\\b",
-			  "name": "constant.language.kidscript"
+			"match": "\\b(?i:true|false)\\b",
+			"name": "constant.language.kidscript"
 		},
 		"numbers": {
 			"patterns": [{
@@ -89,7 +83,7 @@
 			}
 		},
 		"builtin_classes": {
-			"match": "(?<![^.]\\.|:)\\b(Alien|Apple|Arrow|Asteroid|Astronaut|Ball|Balloon|Barrel|BaseballBat|BaseballGlove|Baseball|BasketballHoop|Basketball|Bat|Bell|BirthdayCake|Blackhole|Block|BlocksT|BlocksZ|Blocks|Boat|Box|Brick|Bridge|Briefcase|Building|Bush|Button|Cactus|CandyCane|CandyCorn|CannonLeg|Cannon|Car|Castle|Cat|Catapult|Cave|Chain|Cheese|Cherries|Circle|Cloud|Clover|Coin|ConcertLight|ConstructionCone|ControlPanel|Cookie|Cow|DirectionalPad|Dog|Door|Doughnut|Dreidel|Elephant|Fence|Fireball|Fish|Flag|Flame|Flower|Football|Gate|Gear|Gem|Ghost|GingerbreadMan|GoalPost|Grapes|Hamburger|Hatch|Heart|Hospital|Hotdog|House|IceBox|Jewel|Key|Label|Ladder|LargePlatform|LaunchTower|LavaBox|Lava|List|Menorah|MetalBox|Meteor|Moon|Octopus|Orange|Ornament|Paddle|Paintbrush|PalmTree|Parachute|Pawn|PineTree|Pineapple|Pipe|Pizza|Plane|Planet|Plant|Platform|Platypus|Player|Poo|Pot|Pumpkin|Rabbit|Rainbow|Ramp|Rectangle|Rock|Rocket|Satellite|School|Shrub|Sign|Snack|Snowflake|Snowman|SoccerBall|SpaceDog|Speaker|Spider|Spikes|Spring|Sprout|Star|Stars|Stocking|Strawberry|Submarine|Sun|Sunglasses|Sword|Table|Telescope|Timer|Toggle|Trapdoor|Tree|Truck|Trumpet|Trunk|Turtle|TV|Volleyball|Water|Waterdrop|Window|WoodBox|Wreath|Wrench)\\b",
+			"match": "\\b(Alien|Apple|Arrow|Asteroid|Astronaut|Ball|Balloon|Barrel|BaseballBat|BaseballGlove|Baseball|BasketballHoop|Basketball|Bat|Bell|BirthdayCake|Blackhole|Block|BlocksT|BlocksZ|Blocks|Boat|Box|Brick|Bridge|Briefcase|Building|Bush|Button|Cactus|CandyCane|CandyCorn|CannonLeg|Cannon|Car|Castle|Cat|Catapult|Cave|Chain|Cheese|Cherries|Circle|Cloud|Clover|Coin|ConcertLight|ConstructionCone|ControlPanel|Cookie|Cow|DirectionalPad|Dog|Door|Doughnut|Dreidel|Elephant|Fence|Fireball|Fish|Flag|Flame|Flower|Football|Gate|Gear|Gem|Ghost|GingerbreadMan|GoalPost|Grapes|Hamburger|Hatch|Heart|Hospital|Hotdog|House|IceBox|Jewel|Key|Label|Ladder|LargePlatform|LaunchTower|LavaBox|Lava|List|Menorah|MetalBox|Meteor|Moon|Octopus|Orange|Ornament|Paddle|Paintbrush|PalmTree|Parachute|Pawn|PineTree|Pineapple|Pipe|Pizza|Plane|Planet|Plant|Platform|Platypus|Player|Poo|Pot|Pumpkin|Rabbit|Rainbow|Ramp|Rectangle|Rock|Rocket|Satellite|School|Shrub|Sign|Snack|Snowflake|Snowman|SoccerBall|SpaceDog|Speaker|Spider|Spikes|Spring|Sprout|Star|Stars|Stocking|Strawberry|Submarine|Sun|Sunglasses|Sword|Table|Telescope|Timer|Toggle|Trapdoor|Tree|Truck|Trumpet|Trunk|Turtle|TV|Volleyball|Water|Waterdrop|Window|WoodBox|Wreath|Wrench)\\b",
 			"name": "support.class.library.kidscript"
 		},
 		"any-method": {

@@ -22,6 +22,10 @@
 			"scopeName": "source.kidscript",
 			"path": "./syntaxes/kidscript.tmLanguage.json"
 		}],
+		"snippets": [{
+			"language": "kidscript",
+			"path": "./syntaxes/snippets.json"
+		}],
 		"iconThemesButDisabled": [{
 			"id": "kidscript",
 			"label": "KidScript",
