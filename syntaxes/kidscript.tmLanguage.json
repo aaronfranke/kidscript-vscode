@@ -14,6 +14,10 @@
 		{
 			"match": "\\b(game|math|random)\\b",
 			"name": "support.variable.kidscript"
+		},
+		{
+			"match": "(\\\\|;|:|`|~|!|@|\\$|%|\\*|/|&|\\||\\^|<|>|\\?|'|\\b[A-Z][a-zA-Z_0-9]*)",
+			"name": "invalid.illegal.kidscript"
 		}
 	],
 	"repository": {
