@@ -1,0 +1,25 @@
+{
+    "name": "kidscript",
+    "displayName": "KidScript",
+    "description": "KidScript syntax highlighting support for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kidscript",
+            "aliases": ["KidScript", "kidscript"],
+            "extensions": [".ks",".kidscript"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kidscript",
+            "scopeName": "source.kidscript",
+            "path": "./syntaxes/kidscript.tmLanguage.json"
+        }]
+    }
+}
