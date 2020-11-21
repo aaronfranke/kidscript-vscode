@@ -1,25 +1,31 @@
 {
-    "name": "kidscript",
-    "displayName": "KidScript",
-    "description": "KidScript syntax highlighting support for VS Code",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.51.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "kidscript",
-            "aliases": ["KidScript", "kidscript"],
-            "extensions": [".ks",".kidscript"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "kidscript",
-            "scopeName": "source.kidscript",
-            "path": "./syntaxes/kidscript.tmLanguage.json"
-        }]
-    }
+	"name": "kidscript-vscode",
+	"displayName": "KidScript",
+	"description": "KidScript syntax highlighting support for VS Code. KidScript is a programming language created by Codeverse, which draws inspiration from, and acts as a gateway to, many popular languages.",
+	"homepage": "https://www.codeverse.com/",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.51.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "kidscript",
+			"aliases": ["KidScript", "kidscript"],
+			"extensions": [".ks",".kidscript"],
+			"configuration": "./language-configuration.json"
+		}],
+		"grammars": [{
+			"language": "kidscript",
+			"scopeName": "source.kidscript",
+			"path": "./syntaxes/kidscript.tmLanguage.json"
+		}],
+		"iconThemesButDisabled": [{
+			"id": "kidscript",
+			"label": "KidScript",
+			"path": "./theme/kidscript-theme.json"
+		}]
+	}
 }

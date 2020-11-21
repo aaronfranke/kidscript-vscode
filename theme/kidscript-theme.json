@@ -1,0 +1,11 @@
+{
+	"iconDefinitions": {
+		"_kidscript": {
+			"iconPath": "./codeverse.png"
+		}
+	},
+	"fileExtensions": {
+		"ks": "_kidscript",
+		"kidscript": "_kidscript"
+	}
+}
