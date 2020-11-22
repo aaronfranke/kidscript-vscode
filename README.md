@@ -7,7 +7,7 @@ KidScript draws inspiration from, and acts as a gateway to, many popular
 languages. It includes all of the core concepts of programming. The syntax
 of KidScript is simple and predictable and is optimized entirely for learning.
 
-![Example](./images/example.png)
+![Example](https://raw.githubusercontent.com/aaronfranke/kidscript-vscode/master/images/example.png)
 
 https://www.codeverse.com/
 

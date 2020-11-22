@@ -1,7 +1,5 @@
 {
-	"fileTypes": [
-		"ks", "kidscript"
-	],
+	"fileTypes": ["ks", "kidscript"],
 	"scopeName": "source.kidscript",
 	"name": "KidScript",
 	"patterns": [
@@ -31,18 +29,20 @@
 			"name": "comment.line.number-sign.kidscript"
 		},
 		"strings": {
-			"patterns": [{
-				"begin": "\"",
-				"end": "\"",
-				"name": "string.quoted.double.kidscript"
-			}]
+			"patterns": [
+				{
+					"begin": "\"",
+					"end": "\"",
+					"name": "string.quoted.double.kidscript"
+				}
+			]
 		},
 		"base_expression": {
 			"patterns": [
-				{ "include": "#strings"},
-				{ "include": "#comment"},
-				{ "include": "#letter"},
-				{ "include": "#numbers"}
+				{ "include": "#strings" },
+				{ "include": "#comment" },
+				{ "include": "#letter" },
+				{ "include": "#numbers" }
 			]
 		},
 		"keywords": {
@@ -62,28 +62,30 @@
 			"name": "constant.language.kidscript"
 		},
 		"numbers": {
-			"patterns": [{
-				"match": "\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))\\b",
-				"name": "constant.numeric.kidscript"
-			},
-			{
-				"match": "\\b(?i:(\\.\\d+(e[\\-\\+]?\\d+)?))\\b",
-				"name": "constant.numeric.kidscript"
-			},
-			{
-				"match": "\\b(?i:(\\d+e[\\-\\+]?\\d+))\\b",
-				"name": "constant.numeric.kidscript"
-			},
-			{
-				"match": "\\b\\d+\\b",
-				"name": "constant.numeric.kidscript"
-			}]
+			"patterns": [
+				{
+					"match": "\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))\\b",
+					"name": "constant.numeric.kidscript"
+				},
+				{
+					"match": "\\b(?i:(\\.\\d+(e[\\-\\+]?\\d+)?))\\b",
+					"name": "constant.numeric.kidscript"
+				},
+				{
+					"match": "\\b(?i:(\\d+e[\\-\\+]?\\d+))\\b",
+					"name": "constant.numeric.kidscript"
+				},
+				{
+					"match": "\\b\\d+\\b",
+					"name": "constant.numeric.kidscript"
+				}
+			]
 		},
 		"var_def": {
 			"match": "\\b(?i:(var))\\s+([a-z][a-z_0-9]*)",
 			"captures": {
-			  "1": { "name": "storage.type.var.kidscript" },
-			  "2": { "name": "variable.language.kidscript" }
+				"1": { "name": "storage.type.var.kidscript" },
+				"2": { "name": "variable.language.kidscript" }
 			}
 		},
 		"builtin_classes": {

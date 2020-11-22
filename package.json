@@ -8,7 +8,8 @@
 		"type": "git",
 		"url": "https://github.com/aaronfranke/kidscript-vscode"
 	},
-	"version": "0.0.1",
+	"publisher": "aaronfranke",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.51.0"
 	},
@@ -16,25 +17,44 @@
 		"Programming Languages"
 	],
 	"contributes": {
-		"languages": [{
-			"id": "kidscript",
-			"aliases": ["KidScript", "kidscript"],
-			"extensions": [".ks",".kidscript"],
-			"configuration": "./language-configuration.json"
-		}],
-		"grammars": [{
-			"language": "kidscript",
-			"scopeName": "source.kidscript",
-			"path": "./syntaxes/kidscript.tmLanguage.json"
-		}],
-		"snippets": [{
-			"language": "kidscript",
-			"path": "./syntaxes/snippets.json"
-		}],
-		"iconThemesButDisabled": [{
-			"id": "kidscript",
-			"label": "KidScript",
-			"path": "./theme/kidscript-theme.json"
-		}]
+		"languages": [
+			{
+				"id": "kidscript",
+				"aliases": [
+					"KidScript",
+					"kidscript"
+				],
+				"extensions": [
+					".ks",
+					".kidscript"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "kidscript",
+				"scopeName": "source.kidscript",
+				"path": "./syntaxes/kidscript.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "kidscript",
+				"path": "./syntaxes/snippets.json"
+			}
+		],
+		"iconThemesButDisabled": [
+			{
+				"id": "kidscript",
+				"label": "KidScript",
+				"path": "./theme/kidscript-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "1451eb83-9f22-45fc-8b6a-069fe50346c3",
+		"publisherDisplayName": "Aaron Franke",
+		"publisherId": "65f2ccf5-fde8-4245-8633-a58ed3cc11b8"
 	}
 }

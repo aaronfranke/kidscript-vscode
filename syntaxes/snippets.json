@@ -1,16 +1,12 @@
 {
 	"MultiplicationKeyword": {
 		"prefix": "multiplicationkeyword",
-		"body": [
-			"×"
-		],
+		"body": ["×"],
 		"description": "Multiplication Keyword"
 	},
 	"DivisionKeyword": {
 		"prefix": "divisionkeyword",
-		"body": [
-			"÷"
-		],
+		"body": ["÷"],
 		"description": "Division Keyword"
 	},
 	"ImportKeyword": {
