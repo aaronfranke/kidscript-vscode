@@ -10,3 +10,8 @@ of KidScript is simple and predictable and is optimized entirely for learning.
 https://www.codeverse.com/
 
 https://www.kidscript.io/
+
+## License
+
+The code in this repo is licensed under the MIT license.
+However, "KidScript" and "Codeverse" are trademarks of Americademy.
