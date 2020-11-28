@@ -85,5 +85,26 @@
 			"end"
 		],
 		"description": "Timer Snippet"
+	},
+	"MovementSnippet": {
+		"prefix": "movementsnippet",
+		"body": [
+			"when $1.pressRight()",
+			"  $2.moveRight()",
+			"end",
+			"when $1.pressLeft()",
+			"  $2.moveLeft()",
+			"end",
+			"when $1.pressUp()",
+			"  $2.moveUp()",
+			"end",
+			"when $1.pressDown()",
+			"  $2.moveDown()",
+			"end",
+			"when $1.release()",
+			"  $2.stop()",
+			"end"
+		],
+		"description": "Movement Snippet"
 	}
 }
