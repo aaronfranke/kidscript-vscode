@@ -9,7 +9,7 @@
 		"url": "https://github.com/aaronfranke/kidscript-vscode"
 	},
 	"publisher": "aaronfranke",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"engines": {
 		"vscode": "^1.51.0"
 	},

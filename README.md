@@ -13,6 +13,15 @@ https://www.codeverse.com/
 
 https://www.kidscript.io/
 
+Language grammar documentation: https://macromates.com/manual/en/language_grammars
+
+This extension can be updated using VSCE:
+
+```
+vsce package
+vsce publish
+```
+
 ## License
 
 The code in this repo is licensed under the MIT license.
