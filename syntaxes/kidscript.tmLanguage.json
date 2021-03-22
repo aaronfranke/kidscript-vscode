@@ -41,7 +41,7 @@
 			]
 		},
 		"keywords": {
-			"match": "\\b(and|end|for|greater than|if|import|is|is not|less than|log|loop|new|or|then|var|when)\\b",
+			"match": "\\b(and|end|for|greater than|if|import|in|is|is not|less than|log|loop|new|or|then|var|when)\\b",
 			"name": "keyword.language.kidscript"
 		},
 		"arithmetic_op": {
